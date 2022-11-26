@@ -1,0 +1,151 @@
+
+/* - Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;;
+}
+
+
+/* RATING STATE */
+
+#ratingState {
+    max-width: 40vh;
+    display: flex;
+    /* display: flex; */
+    flex-direction: column;
+    background: hsl(213, 19%, 18%);
+    border-radius: 6%;
+    padding: 32px;
+}
+
+#ratingState .star {
+    background: hsl(213, 20%, 22%);
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ratingState h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px 0 0 0;
+}
+
+#ratingState p {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    max-width: 400px;
+    color: hsl(217, 12%, 63%);;
+}
+
+#ratingState .ratingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 30px 0;
+}
+
+#ratingState div > button {
+    background: hsl(213, 20%, 22%);
+    color: hsl(216, 12%, 54%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+#ratingState div > button:hover {
+    background: hsl(217, 12%, 63%);
+    color:white;
+}
+
+#ratingState button {
+    border-radius: 20px;
+    background: hsl(25, 97%, 53%);
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: white;
+    border: none;
+
+}
+
+#ratingState button:hover {
+    background: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+.btnsel {
+    background: hsl(25, 97%, 53%) !important;
+    color: white !important;
+}
+
+/* RATING MOBILE ADJUST */
+
+
+
+
+/* THANK STATE */
+
+#thankState {
+    max-width: 40vh;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(213, 19%, 18%);
+    border-radius: 6%;
+    padding: 32px;
+}
+
+#thankState button {
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    height: 30px;
+    padding: 0 15px;
+    background: hsl(213, 20%, 22%);
+    color: hsl(25, 97%, 53%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#thankState h1 {
+    margin: 30px 0 10px 0 ;
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+#thankState p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+
+}
