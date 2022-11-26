@@ -1,0 +1,138 @@
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg");
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* TOP CONTAINER */
+
+.topContainer {
+    padding: 10px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftContainer img:nth-of-type(1) {
+    margin-bottom: 60px;
+    max-width: fit-content;
+}
+
+/* RIGHT SIDE */
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.rightContainer h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.rightContainer p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.rightContainer button {
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,.8);
+    max-width: 200px;
+}
+
+.rightContainer button:hover {
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+/* BOTTOM SIDE */
+
+.bottomContainer {
+    align-self: flex-end;
+    padding-right: 60px;
+}
+
+.bottomContainer button {
+    background: transparent;
+    color: white;
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+    border: solid white;
+    border-radius: 50%;
+}
+
+.bottomContainer button:hover {
+    border: solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+
+    .topContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftContainer {
+        align-items: center;
+    }
+
+    .rightContainer {
+        align-items: center;
+        margin: 0;
+        width: 400px;
+    }
+
+    .rightContainer h1 {
+        text-align: center;
+        font-size: 33px;
+        margin-bottom: 10px;
+    }
+
+    .rightContainer p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .rightContainer button {
+        width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .bottomContainer {
+        align-self: center;
+        padding: 0;
+    }
+
+    .bottomContainer button {
+        margin-bottom: 20px;
+    }
+}
