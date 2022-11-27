@@ -40,10 +40,10 @@ body {
     color: hsla(300, 9%, 96%, 1);
 }
 .infoContainer h1 {
-
+    font-size: large;
 }
 .infoContainer p {
-
+    text-align: center;
 }
 
 .profileContainer {
