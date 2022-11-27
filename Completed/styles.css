@@ -18,6 +18,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+    row-gap: 40px;
 }
 
 /* TOP SECTION */
@@ -32,15 +33,16 @@ body {
 .infoContainer {
     background:hsla(27, 10%, 17%, 1);
     border-radius: 12px;
-    padding: 30px;
+    padding: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: hsla(300, 9%, 96%, 1);
+    max-width: 500px;
 }
 .infoContainer h1 {
-    font-size: large;
+    font-size: x-large;
 }
 .infoContainer p {
     text-align: center;
@@ -52,6 +54,8 @@ body {
     border-radius: 12px;
     color: hsla(300, 9%, 96%, 1);
     background:hsla(27, 10%, 17%, 1);
+    max-width: 700px;
+
 }
 
 .redBanner {
@@ -80,23 +84,30 @@ body {
     align-items: center;
 }
 .bottomSide h1 {
-    margin: 70px 0 0 0;
+    margin: 70px 0 20px 0;
 }
-.bottomSide p {
-    
+.bottomSide a {
+    text-decoration-line: none;
+    padding: 10px 30px 0;
+    height: 40px;
+    font-size: 20px;
+    background: rgb(59, 56, 53);
+    border: none;
+    border-radius: 10px;
+    color: hsla(300, 9%, 96%, 1);
 }
-
-.bottomSide .desc {
-
+.bottomSide a:hover {
+    color: hsla(39, 92%, 57%, 1);
 }
 
 .githubStatContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 500px;
     background: rgb(59, 56, 53);
     padding: 16px;
     border-radius: 14px;
+    border-top: 2px solid hsla(39, 92%, 57%, 1);
 }
 .githubStatContainer div {
     display: flex;
@@ -105,10 +116,11 @@ body {
 }
 .githubStatContainer div > h1 {
     margin: 0;
-
+    color: hsla(94, 38%, 59%, 1);
 }
-.githubStatContainer div > p {
-
+.githubStatContainer div > p:hover {
+    cursor: pointer;
+    color: hsla(39, 92%, 57%, 1);
 }
 
 /* BOTTOM SECTION */
@@ -117,21 +129,34 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    max-width: 2000px;
+    max-height: 300px;
 }
 
 .card {
-
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsla(27, 10%, 17%, 1);
+    margin: 0 20px 20px;
+    padding: 12px;
+    border-radius: 12px;
+    color: hsla(300, 9%, 96%, 1);
 }
-.card img {
+.card a > img {
     height: 150px;
     width: 250px;
 }
-.card h1 {
-
+.card a:nth-of-type(2) {
+    font-size: 16px;
+    margin: 14px 0;
+    text-decoration-line: none;
+    color: hsla(300, 9%, 96%, 1)
+}
+.card a:hover {
+    color: hsla(39, 92%, 57%, 1);
 }
 .card div {
-
-}
-.card div > i {
-
+    align-self: flex-start;
 }
