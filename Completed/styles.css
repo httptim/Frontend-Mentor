@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
 :root {
     --jet: hsla(27, 10%, 17%, 1);
     --cultured: hsla(300, 9%, 96%, 1);
@@ -7,22 +9,35 @@
     --honey-yellow: hsla(39, 92%, 57%, 1);   
 }
 
-
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
+    padding: 50px;
     height: 100vh;
     background: var(--cultured);
-
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 /* TOP SECTION */
 
 .topSection {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
 }
 
 .infoContainer {
-
+    background:hsla(27, 10%, 17%, 1);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsla(300, 9%, 96%, 1);
 }
 .infoContainer h1 {
 
@@ -32,24 +47,40 @@ body {
 }
 
 .profileContainer {
-
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    color: hsla(300, 9%, 96%, 1);
+    background:hsla(27, 10%, 17%, 1);
 }
 
 .redBanner {
-
-}
-.redBanner i {
-
+    background: rgb(255,92,92);
+    display: flex;
+    justify-content: center;
+    min-height: 80px;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .redBanner img {
-
+    border-radius: 50%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
 }
 
 .bottomSide {
-
+    background: hsla(27, 10%, 17%, 1);
+    border-radius: inherit;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bottomSide h1 {
-
+    margin: 70px 0 0 0;
 }
 .bottomSide p {
     
@@ -60,12 +91,20 @@ body {
 }
 
 .githubStatContainer {
-
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background: rgb(59, 56, 53);
+    padding: 16px;
+    border-radius: 14px;
 }
 .githubStatContainer div {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .githubStatContainer div > h1 {
+    margin: 0;
 
 }
 .githubStatContainer div > p {
@@ -75,14 +114,17 @@ body {
 /* BOTTOM SECTION */
 
 .bottomSection {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .card {
 
 }
 .card img {
-
+    height: 150px;
+    width: 250px;
 }
 .card h1 {
 
